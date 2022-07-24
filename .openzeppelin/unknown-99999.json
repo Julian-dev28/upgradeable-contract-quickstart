@@ -1,0 +1,98 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xDbDa30ad00b67702BDCEd019C3b46D35DB9e94ce",
+    "txHash": "0x56c215778e780ac1dfeb78a56179e1a2ed55f9710ee93a8be45d53aaaf0a9e78"
+  },
+  "proxies": [
+    {
+      "address": "0x4359190563c0F38C84037a28288E01A2b1011Ec8",
+      "txHash": "0x591ea00b32ce30c77db9c6da273b3c160461ed90c4e5973036684e30c85ab4a2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xBD75b85142F3fc0909ae9A2D22B5e7C314DdBbe6",
+      "txHash": "0x05b20e7170222122e6a5161e9dcccfe31a688744e8c69450fa4c52a622a4f24a",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f": {
+      "address": "0xB6157727b2989aE46e970B451A289941Ce8B41FA",
+      "txHash": "0x9a973fc3a636bdaa659ffcb2bc9df57108a60b3255908131e4710c79ecac677b",
+      "layout": {
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "7709c76072eefee6891ef2e462237ced97a2a56a57e678c44c4e840712ada297": {
+      "address": "0x1A44477AF531Ab811cd82772477f40750e763ff9",
+      "txHash": "0x802baea122cc0c2866a508c14b2acf9f3c8b17c6a9186d47e25fa64cb8e87f2d",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "initialized",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "AvaxWallet",
+            "src": "contracts/AvaxWallet.sol:8"
+          },
+          {
+            "label": "owner",
+            "offset": 3,
+            "slot": "0",
+            "type": "t_address_payable",
+            "contract": "AvaxWallet",
+            "src": "contracts/AvaxWallet.sol:9"
+          }
+        ],
+        "types": {
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
