@@ -1,4 +1,3 @@
-import { ethers } from 'ethers'
 import hre from 'hardhat'
 // scripts/prepare_upgrade.js
 async function main() {

@@ -1,7 +1,5 @@
 // test/AvaxWallet.ts
 // Load dependencies
-import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers'
-import { Contract, ContractFactory } from 'ethers'
 import { expect } from 'chai'
 import hre from 'hardhat'
 
@@ -13,10 +11,6 @@ describe('AvaxWallet', function () {
     const AvaxWallet = await hre.ethers.getContractFactory('AvaxWallet')
     this.wallet = await AvaxWallet.deploy()
     await this.wallet.deployed()
-
-    const ExampleERC20 = await hre.ethers.getContractFactory('ExampleERC20')
-    this.coin = await ExampleERC20.deploy()
-    await this.coin.deployed()
 
     await this.wallet.initialize(this.owner.address)
     expect(await this.wallet.initialized()).to.equal(true)

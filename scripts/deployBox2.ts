@@ -1,4 +1,3 @@
-import { ethers } from 'ethers'
 import hre from 'hardhat'
 // scripts/deploy.js
 async function main() {

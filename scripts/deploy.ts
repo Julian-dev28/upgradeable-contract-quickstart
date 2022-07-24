@@ -1,6 +1,4 @@
-import { ethers } from 'ethers'
 import hre from 'hardhat'
-import { number } from 'yargs'
 // scripts/deploy.js
 async function main() {
   const Box = await hre.ethers.getContractFactory('Box')
