@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/cli": "^2.8.2",
     "hardhat": "^2.10.1"
   },
   "devDependencies": {

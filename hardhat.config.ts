@@ -6,17 +6,8 @@ import '@nomiclabs/hardhat-ethers';
 import dotenv from 'dotenv';
 import '@nomiclabs/hardhat-ethers';
 import '@openzeppelin/hardhat-upgrades';
-import yargs from 'yargs'
 dotenv.config();
-const {NODE_URL,CHAIN_ID,PK} = process.env;
-
-const argv = yargs
-  .option('network', {
-    type: 'string',
-    default: 'hardhat',
-  })
-  .help(false)
-  .version(false).argv
+const {NODE_URL,PK} = process.env;
 
 // When using the hardhat network, you may choose to fork Fuji or Avalanche Mainnet
 // This will allow you to debug contracts using the hardhat network while keeping the current network state
