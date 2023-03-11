@@ -6,12 +6,25 @@ The project includes a sample contract, a test for that contract, and a script t
 # Usage
 To get started, try running some of the following tasks:
 
+Run the tests for the sample contract.
+```zsh
+npx hardhat test
 ```
-npx hardhat help: Displays a list of available Hardhat commands and tasks.
-npx hardhat test: Runs the tests for the sample contract.
-GAS_REPORT=true npx hardhat test: Runs the tests for the sample contract and displays the gas report.
-npx hardhat node: Starts a Hardhat network node.
-npx hardhat run scripts/deploy.ts: Deploys the sample contract.
+
+Run the tests for the sample contract and displays the gas report.
+```zsh
+GAS_REPORT=true npx hardhat test
+```
+
+Start a Hardhat network node.
+
+```zsh
+npx hardhat node
+```
+
+Deploy the sample contract.
+```zsh
+npx hardhat run scripts/deploy.ts
 ```
 
 # Contributing
